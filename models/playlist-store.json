@@ -6,14 +6,14 @@
       "songs": [
         {
           "id": "01",
-           "genre": "Pop/Rock",
+           "genre": "Classical",
           "duration": "3:00",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven"
         },
         {
           "id": "02",
-           "genre": "Pop/Rock",
+           "genre": "Classical",
           "duration": "3:00",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven"
@@ -33,21 +33,21 @@
       "songs": [
         {
           "id": "04",
-           "genre": "Pop/Rock",
+           "genre": "Classical",
              "duration": "3:00",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
-           "genre": "Pop/Rock",
+           "genre": "Classical",
           "id": "05",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
-           "genre": "Pop/Rock",
+           "genre": "Classical",
           "id": "06",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven"
