@@ -16,7 +16,7 @@ const about = {
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
       title: 'About the Playlist App',
-      developers: developersStore.getAllDevelopers(),
+      developers: developerStore.getAllDevelopers(),
     };
     
     // render the about view and pass through the data
