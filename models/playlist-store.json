@@ -1,24 +1,26 @@
 {
   "playlistCollection": [
     {
-      "duration": "9:00",
       "id": "001",
       "title": "Beethoven Sonatas",
       "songs": [
         {
           "id": "01",
+           "genre": "Pop/Rock",
           "duration": "3:00",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven"
         },
         {
           "id": "02",
+           "genre": "Pop/Rock",
           "duration": "3:00",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven"
         },
         {
           "id": "03",
+           "genre": "Classical",
           "duration": "3:00",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven"
@@ -26,24 +28,26 @@
       ]
     },
     {
-      "duration": "9:00",
       "id": "002",
       "title": "Beethoven Concertos",
       "songs": [
         {
           "id": "04",
+           "genre": "Pop/Rock",
              "duration": "3:00",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
+           "genre": "Pop/Rock",
           "id": "05",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
+           "genre": "Pop/Rock",
           "id": "06",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven"
@@ -53,23 +57,25 @@
     
         {
       "id": "003",
-      "duration": "9:00",
       "title": "Coldplay Bangers",
       "songs": [
         {
           "id": "07",
+           "genre": "Pop/Rock",
              "duration": "3:00",
           "title": "Adventure of a lifetime",
           "artist": "Coldplay"
         },
         {
           "id": "08",
+           "genre": "Pop/Rock",
              "duration": "3:00",
           "title": "Paradise",
           "artist": "Coldplay"
         },
         {
           "id": "09",
+           "genre": "Pop/Rock",
              "duration": "3:00",
           "title": "Viva la vida",
           "artist": "Coldplay"
