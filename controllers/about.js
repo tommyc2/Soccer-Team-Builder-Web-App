@@ -2,6 +2,7 @@
 
 // import all required modules
 import logger from '../utils/logger.js';
+import developerStore from '../models/developer-store.js';
 
 // create about object
 const about = {
