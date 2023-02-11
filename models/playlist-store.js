@@ -2,17 +2,17 @@
 
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const playlistCollection = require("./playlist-store.json");
+const teamsCollection = require("./playlist-store.json");
 
-const playlistStore = {
+const teamShack = {
   // import the playlist collection object
-  playlistCollection: playlistCollection.playlistCollection,
+  teamsCollection: teamsCollection.teamsCollection,
 
   // function to get all of the playlists
-  getAllPlaylists() {
-    return this.playlistCollection;
+  getAllTeams() {
+    return this.teamsCollection;
   },
 };
 
 // export the playlistStore object so it can be used elsewhere
-export default playlistStore;
+export default teamShack;
