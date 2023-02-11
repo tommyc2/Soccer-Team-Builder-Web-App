@@ -27,5 +27,10 @@ h1 {
 }
 
 .ui.segment {
-  color: #F4EDED;
+  background: #F4EDED;
+  
+}
+
+.ui.menu {
+background-color: #F9DB6D;
 }
