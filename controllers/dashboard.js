@@ -15,8 +15,8 @@ const dashboard = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
-      playlists: teamShack.getAllPlaylists(),
+      title: 'Chelsea Team App Dashboard',
+      playlists: teamShack.getAllTeams(),
     };
 
     // render the dashboard view and pass through the data

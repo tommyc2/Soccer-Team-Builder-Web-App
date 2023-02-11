@@ -1,8 +1,8 @@
 {
-  "playlistCollection": [
+  "teamsCollection": [
     {
       "id": "001",
-      "title": "Beethoven Sonatas",
+      "title": "Chelsea First Team",
       "songs": [
         {
           "id": "01",
@@ -29,7 +29,7 @@
     },
     {
       "id": "002",
-      "title": "Beethoven Concertos",
+      "title": "Tommy's XI",
       "songs": [
         {
           "id": "04",
@@ -57,7 +57,7 @@
     
         {
       "id": "003",
-      "title": "Coldplay Bangers",
+      "title": "Bayern Munich",
       "songs": [
         {
           "id": "07",
