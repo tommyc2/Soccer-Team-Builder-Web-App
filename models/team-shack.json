@@ -3,54 +3,54 @@
     {
       "id": "001",
       "teamName": "Chelsea First Team",
-      "songs": [
+      "players": [
         {
           "id": "01",
-           "genre": "Classical",
-          "duration": "3:00",
+           "position": "Classical",
+          "age": "3:00",
           "playerName": "Piano Sonata No. 3",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         },
         {
           "id": "02",
-           "genre": "Classical",
-          "duration": "3:00",
+           "position": "Classical",
+          "age": "3:00",
           "playerName": "Piano Sonata No. 7",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         },
         {
           "id": "03",
-           "genre": "Classical",
-          "duration": "3:00",
+           "position": "Classical",
+          "age": "3:00",
           "playerName": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         }
       ]
     },
     {
       "id": "002",
       "teamName": "Tommy's XI",
-      "songs": [
+      "players": [
         {
           "id": "04",
-           "genre": "Classical",
-             "duration": "3:00",
+           "position": "Classical",
+             "age": "3:00",
           "playerName": "Piano Concerto No. 0",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         },
         {
-             "duration": "3:00",
-           "genre": "Classical",
+             "age": "3:00",
+           "position": "Classical",
           "id": "05",
           "playerName": "Piano Concerto No. 4",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         },
         {
-             "duration": "3:00",
-           "genre": "Classical",
+             "age": "3:00",
+           "position": "Classical",
           "id": "06",
           "playerName": "Piano Concerto No. 6",
-          "artist": "Beethoven"
+          "marketValue": "Beethoven"
         }
       ]
     },
@@ -58,27 +58,27 @@
         {
       "id": "003",
       "teamName": "Bayern Munich",
-      "songs": [
+      "players": [
         {
           "id": "07",
-           "genre": "Pop/Rock",
-             "duration": "3:00",
+           "position": "Pop/Rock",
+             "age": "3:00",
           "playerName": "Adventure of a lifetime",
-          "artist": "Coldplay"
+          "marketValue": "Coldplay"
         },
         {
           "id": "08",
-           "genre": "Pop/Rock",
-             "duration": "3:00",
+           "position": "Pop/Rock",
+             "age": "3:00",
           "playerName": "Paradise",
-          "artist": "Coldplay"
+          "marketValue": "Coldplay"
         },
         {
           "id": "09",
-           "genre": "Pop/Rock",
-             "duration": "3:00",
+           "position": "Pop/Rock",
+             "age": "3:00",
           "playerName": "Viva la vida",
-          "artist": "Coldplay"
+          "marketValue": "Coldplay"
         }
       ]
     }

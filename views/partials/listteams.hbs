@@ -1,26 +1,26 @@
 <table class="ui fixed striped table">
   <thead>
     <tr>
-      <th>Song</th>
-      <th>Artist</th>
-      <th>Duration</th>
-      <th>Genre</th>
+      <th>Team</th>
+      <th>Market Value</th>
+      <th>Age</th>
+      <th>Position</th>
     </tr>
   </thead>
   <tbody>
-    {{#each songs}}
+    {{#each players}}
       <tr>
         <td>
-          {{title}}
+          {{teamName}}
         </td>
         <td>
-          {{artist}}
+          {{marketValue}}
         </td>
         <td>
-          {{duration}}
+          {{age}}
         </td>
         <td>
-          {{genre}}
+          {{position}}
         </td>
       </tr>
     {{/each}}
