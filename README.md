@@ -1,10 +1,7 @@
-Lab 3
-=================
+# Assignment Spec
 
-- Added node files (package.json, server.js, routes.js)
-- Added logging facility (utils/logger.js)
-- Changed from HTML files to views (inc. layout and partials)
-- Created controllers to populate the views
-- Updated routes.js file and menu links
-- Move style.css and script.js to public folder
-- Exercise: added about view (plus matching route and controller)
+- Soccer Team based app.
+- Allows user to add details of their team or a team they support (e.g. Bayern Munich, Waterford F.C etc.)
+- Each team contains details about the starting 11 lineups for each respective team.
+
+.... Add more about spec here ......

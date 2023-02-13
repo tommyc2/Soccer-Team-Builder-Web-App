@@ -2,9 +2,9 @@
 
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const teamsCollection = require("./playlist-store.json");
+const teamsCollection = require("./team-shack.json");
 
-const teamShack = {
+const teams = {
   // import the playlist collection object
   teamsCollection: teamsCollection.teamsCollection,
 
@@ -15,4 +15,4 @@ const teamShack = {
 };
 
 // export the playlistStore object so it can be used elsewhere
-export default teamShack;
+export default teams;
