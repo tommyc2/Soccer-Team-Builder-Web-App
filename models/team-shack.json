@@ -2,54 +2,54 @@
   "teamsCollection": [
     {
       "id": "001",
-      "title": "Chelsea First Team",
+      "teamName": "Chelsea First Team",
       "songs": [
         {
           "id": "01",
            "genre": "Classical",
           "duration": "3:00",
-          "title": "Piano Sonata No. 3",
+          "playerName": "Piano Sonata No. 3",
           "artist": "Beethoven"
         },
         {
           "id": "02",
            "genre": "Classical",
           "duration": "3:00",
-          "title": "Piano Sonata No. 7",
+          "playerName": "Piano Sonata No. 7",
           "artist": "Beethoven"
         },
         {
           "id": "03",
            "genre": "Classical",
           "duration": "3:00",
-          "title": "Piano Sonata No. 10",
+          "playerName": "Piano Sonata No. 10",
           "artist": "Beethoven"
         }
       ]
     },
     {
       "id": "002",
-      "title": "Tommy's XI",
+      "teamName": "Tommy's XI",
       "songs": [
         {
           "id": "04",
            "genre": "Classical",
              "duration": "3:00",
-          "title": "Piano Concerto No. 0",
+          "playerName": "Piano Concerto No. 0",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
            "genre": "Classical",
           "id": "05",
-          "title": "Piano Concerto No. 4",
+          "playerName": "Piano Concerto No. 4",
           "artist": "Beethoven"
         },
         {
              "duration": "3:00",
            "genre": "Classical",
           "id": "06",
-          "title": "Piano Concerto No. 6",
+          "playerName": "Piano Concerto No. 6",
           "artist": "Beethoven"
         }
       ]
@@ -57,27 +57,27 @@
     
         {
       "id": "003",
-      "title": "Bayern Munich",
+      "teamName": "Bayern Munich",
       "songs": [
         {
           "id": "07",
            "genre": "Pop/Rock",
              "duration": "3:00",
-          "title": "Adventure of a lifetime",
+          "playerName": "Adventure of a lifetime",
           "artist": "Coldplay"
         },
         {
           "id": "08",
            "genre": "Pop/Rock",
              "duration": "3:00",
-          "title": "Paradise",
+          "playerName": "Paradise",
           "artist": "Coldplay"
         },
         {
           "id": "09",
            "genre": "Pop/Rock",
              "duration": "3:00",
-          "title": "Viva la vida",
+          "playerName": "Viva la vida",
           "artist": "Coldplay"
         }
       ]
