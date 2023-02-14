@@ -10,7 +10,7 @@ ratingBtn &&
 
     document.querySelector("#rating").innerHTML = "You gave a rating of: ";
     for (let i=0; i < userRating; i++){
-        document.querySelector("#rating").innerHTML +="<i class='yellow star icon'></i>";
+        document.querySelector("#rating").innerHTML +="<i class='green money bill alternate icon'></i>";
     }
   }
 });
