@@ -6,79 +6,79 @@
       "players": [
         {
           "id": "01",
-           "position": "Classical",
-          "age": "3:00",
-          "playerName": "Piano Sonata No. 3",
-          "marketValue": "Beethoven"
+           "position": "Defender",
+          "age": "34", 
+          "playerName": "Thiago Silva",
+          "marketValue": "€13m"
         },
         {
           "id": "02",
-           "position": "Classical",
-          "age": "3:00",
+           "position": "Forward",
+          "age": "22",
           "playerName": "Piano Sonata No. 7",
-          "marketValue": "Beethoven"
+          "marketValue": "€20m"
         },
         {
           "id": "03",
-           "position": "Classical",
-          "age": "3:00",
+           "position": "Goalkeeper",
+          "age": "21",
           "playerName": "Piano Sonata No. 10",
-          "marketValue": "Beethoven"
+          "marketValue": "€60m"
         }
       ]
     },
     {
       "id": "002",
-      "teamName": "Tommy's XI",
+      "teamName": "Bayern Munich XI",
       "players": [
         {
           "id": "04",
-           "position": "Classical",
-             "age": "3:00",
-          "playerName": "Piano Concerto No. 0",
-          "marketValue": "Beethoven"
+           "position": "Defender",
+          "age": "34", 
+          "playerName": "Thiago Silva",
+          "marketValue": "€33m"
         },
         {
-             "age": "3:00",
-           "position": "Classical",
           "id": "05",
-          "playerName": "Piano Concerto No. 4",
-          "marketValue": "Beethoven"
+           "position": "Forward",
+          "age": "22",
+          "playerName": "Datro Fofana",
+          "marketValue": "€20m"
         },
         {
-             "age": "3:00",
-           "position": "Classical",
           "id": "06",
-          "playerName": "Piano Concerto No. 6",
-          "marketValue": "Beethoven"
+           "position": "Goalkeeper",
+          "age": "27",
+          "playerName": "Eduard Mendy",
+          "marketValue": "€60m"
         }
       ]
     },
     
         {
       "id": "003",
-      "teamName": "Bayern Munich",
+      "teamName": "Spurs XI",
       "players": [
         {
           "id": "07",
-           "position": "Pop/Rock",
-             "age": "3:00",
-          "playerName": "Adventure of a lifetime",
-          "marketValue": "Coldplay"
+           "position": "Defender",
+          "age": "34", 
+          "playerName": "Thiago Silva",
+          "marketValue": "€33m"
         },
         {
           "id": "08",
-           "position": "Pop/Rock",
-             "age": "3:00",
-          "playerName": "Paradise",
-          "marketValue": "Coldplay"
+           "position": "Forward",
+          "age": "22",
+          "playerName": "Datro Fofana",
+          "marketValue": "€20m"
         },
         {
           "id": "09",
-           "position": "Pop/Rock",
-             "age": "3:00",
-          "playerName": "Viva la vida",
-          "marketValue": "Coldplay"
+           "position": "Goalkeeper",
+          "age": "27",
+          "playerName": "Eduard Mendy",
+          "marketValue": "€60m"
         }
       ]
     }

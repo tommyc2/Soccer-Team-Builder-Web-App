@@ -1,7 +1,7 @@
-const ratebtn  = document.querySelector("#rateit");
+const ratingBtn  = document.querySelector("#rateit");
 
-ratebtn &&
-  ratebtn.addEventListener("click", () => {
+ratingBtn &&
+  ratingBtn.addEventListener("click", () => {
    let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
   if (userRating>5 || userRating<1 || isNaN(userRating)){
     alert("Try again with a number between 1 and 5!");
