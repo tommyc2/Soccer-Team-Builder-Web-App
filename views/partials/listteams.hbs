@@ -1,28 +1,13 @@
-<table class="ui fixed striped table">
-  <thead>
-    <tr>
-      <th>Players</th>
-      <th>Market Value</th>
-      <th>Age</th>
-      <th>Position</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each players}}
-      <tr>
-        <td>
-          {{playerName}}
-        </td>
-        <td>
-          {{marketValue}}
-        </td>
-        <td>
-          {{age}}
-        </td>
-        <td>
-          {{position}}
-        </td>
-      </tr>
-    {{/each}}
-  </tbody>
-</table>
+{{#each teams}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{teamName}}
+    </h2>
+    <a href="/team/{{id}}">
+      <i class="ui open folder icon"></i>
+    </a>
+    <a href="/dashboard/deleteplaylist/{{id}}">
+      <i class="ui trash icon delplaylist"></i>
+    </a>
+  </section>
+{{/each}}
