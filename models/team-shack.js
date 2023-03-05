@@ -3,6 +3,8 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const teamCollection = require("./team-shack.json");
+import _ from 'lodash';
+
 
 const teams = {
   teamCollection: teamCollection.teamsCollection,

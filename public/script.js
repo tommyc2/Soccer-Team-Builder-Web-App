@@ -1,5 +1,7 @@
 const ratingBtn  = document.querySelector("#rateit");
 
+$(".delteam").click(() => confirm('Really delete this team?'))
+
 ratingBtn &&
   ratingBtn.addEventListener("click", () => {
    let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
