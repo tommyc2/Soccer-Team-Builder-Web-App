@@ -24,10 +24,10 @@ const dashboard = {
     response.render('dashboard', viewData);
   },
   
-  deletePlaylist(request, response) {
+  deleteTeam(request, response) {
     const teamId = request.params.id;
-    logger.debug(`Deleting Playlist ${teamId}`);
-    teams.removePlaylist(teamId);
+    logger.debug(`Deleting Team ${teamId}`);
+    teams.removeTeam(teamId);
     response.redirect('/dashboard');
   },
   

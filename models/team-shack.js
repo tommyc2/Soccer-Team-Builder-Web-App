@@ -5,15 +5,15 @@ const require = createRequire(import.meta.url);
 const teamCollection = require("./team-shack.json");
 
 const teams = {
-  teamsCollection: teamCollection.teamsCollection,
+  teamCollection: teamCollection.teamsCollection,
 
  
   getAllTeams() {
-    return this.teamsCollection;
+    return this.teamCollection;
   },
 
   getTeam(id) {
-    return _.find(this.teamsCollection, { id: id });
+    return _.find(this.teamCollection, { id: id });
   },
   
   removePlayer(id, playerId) {
@@ -22,7 +22,7 @@ const teams = {
   },
   
   removeTeam(id) {
-    _.remove(this.teamsCollection, { id: id });
+    _.remove(this.teamCollection, { id: id });
   },
 
 };
