@@ -8,7 +8,7 @@ import teams from '../models/team-shack.js';
 const team = {
   index(request, response) {
     const teamId = request.params.id;
-    logger.debug('Playlist id = ' + teamId);
+    logger.debug('Team id = ' + teamId);
     const viewData = {
       title: 'Team',
       team: teams.getAllTeams(teamId),
