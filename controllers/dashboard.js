@@ -23,6 +23,14 @@ const dashboard = {
     logger.info('about to render', viewData.teams);
     response.render('dashboard', viewData);
   },
+  
+  deletePlaylist(request, response) {
+    const teamId = request.params.id;
+    logger.debug(`Deleting Playlist ${teamId}`);
+    teams.removePlaylist(teamId);
+    response.redirect('/dashboard');
+  },
+  
 };
 
 // export the dashboard module
