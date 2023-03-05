@@ -1,0 +1,40 @@
+<table class="ui fixed striped table">
+  <thead>
+    <tr>
+      <th>Player Name</th>
+      <th>Position</th>
+      <th>Age</th>
+      <th>Market Value</th>
+      <th>  </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each team.players}}
+      <tr>
+        <td>
+          {{playerName}}
+        </td>
+        <td>
+          {{position}}
+        </td>
+        <td>
+          {{age}}
+        </td>
+        <td>
+          {{marketValue}}
+        </td>
+        <td>
+          <a href="/team/{{../team.id}}/deleteplayer/{{id}}" class="ui tiny black button delsong">Delete Player</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+ <p>
+  <span id="rating"> </span>
+</p>
+
+<button class="ui blue button" id = "rateit">
+  Rate it! <i class="star icon"></i>
+</button>
