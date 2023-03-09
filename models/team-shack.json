@@ -6,21 +6,21 @@
       "players": [
         {
           "id": "01",
-           "position": "Defender",
-          "age": "34", 
+          "position": "Defender",
+          "age": "34",
           "playerName": "Thiago Silva",
           "marketValue": "€13m"
         },
         {
           "id": "02",
-           "position": "Forward",
+          "position": "Forward",
           "age": "22",
           "playerName": "Piano Sonata No. 7",
           "marketValue": "€20m"
         },
         {
           "id": "03",
-           "position": "Goalkeeper",
+          "position": "Goalkeeper",
           "age": "21",
           "playerName": "Piano Sonata No. 10",
           "marketValue": "€60m"
@@ -33,49 +33,48 @@
       "players": [
         {
           "id": "04",
-           "position": "Defender",
-          "age": "34", 
+          "position": "Defender",
+          "age": "34",
           "playerName": "Thiago Silva",
           "marketValue": "€33m"
         },
         {
           "id": "05",
-           "position": "Forward",
+          "position": "Forward",
           "age": "22",
           "playerName": "Datro Fofana",
           "marketValue": "€20m"
         },
         {
           "id": "06",
-           "position": "Goalkeeper",
+          "position": "Goalkeeper",
           "age": "27",
           "playerName": "Eduard Mendy",
           "marketValue": "€60m"
         }
       ]
     },
-    
-        {
+    {
       "id": "003",
       "teamName": "Spurs XI",
       "players": [
         {
           "id": "07",
-           "position": "Defender",
-          "age": "34", 
+          "position": "Defender",
+          "age": "34",
           "playerName": "Thiago Silva",
           "marketValue": "€33m"
         },
         {
           "id": "08",
-           "position": "Forward",
+          "position": "Forward",
           "age": "22",
           "playerName": "Datro Fofana",
           "marketValue": "€20m"
         },
         {
           "id": "09",
-           "position": "Goalkeeper",
+          "position": "Goalkeeper",
           "age": "27",
           "playerName": "Eduard Mendy",
           "marketValue": "€60m"
