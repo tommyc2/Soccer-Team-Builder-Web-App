@@ -23,6 +23,16 @@ const team = {
     teams.removePlayer(teamId, playerId);
     response.redirect('/team/' + teamId);
   },
+    addPlayer(request, response) {
+    const teamId = request.params.id;
+    const team = teams.getTeam(teamId);
+    const newPlayer = {
+      title: request.body.title,
+    };
+    teams.addPlayer(teamId, newPlayer);
+    response.redirect('/team/' + teamId);
+  },
+
 };
 
 export default team;

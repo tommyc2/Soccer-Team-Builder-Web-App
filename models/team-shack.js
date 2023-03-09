@@ -26,6 +26,11 @@ const teams = {
   removeTeam(id) {
     _.remove(this.teamCollection, { id: id });
   },
+    addPlayer(id, player) {
+    const team = this.getTeam(id);
+    team.songs.push(player);
+  },
+
 
 };
 

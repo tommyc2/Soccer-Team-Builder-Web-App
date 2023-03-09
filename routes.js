@@ -17,7 +17,7 @@ router.get('/about', about.index);
 router.get('/team/:id', team.index);
 router.get('/team/:id/deleteplayer/:playerId', team.deletePlayer);
 router.get('/dashboard/deleteteam/:id', dashboard.deleteTeam);
-routes.get('/team/:id/addplayer', team.addPlayer)
+router.get('/team/:id/addplayer', team.addPlayer);
 
 // export router module
 export default router;
