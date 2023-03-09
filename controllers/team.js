@@ -3,6 +3,8 @@
 // import all required modules
 import logger from '../utils/logger.js';
 import teams from '../models/team-shack.js';
+import { v4 as uuidv4 } from 'uuid';
+
 
 
 const team = {
@@ -28,6 +30,7 @@ const team = {
     const team = teams.getTeam(teamId);
     const newPlayer = {
       title: request.body.title,
+      id: uuidv4()
     };
     teams.addPlayer(teamId, newPlayer);
     response.redirect('/team/' + teamId);
