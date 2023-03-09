@@ -3,6 +3,8 @@
 // import all required modules
 import logger from '../utils/logger.js';
 import teams from '../models/team-shack.js';
+import { v4 as uuidv4 } from 'uuid';
+
 
 // create dashboard object
 const dashboard = {
@@ -30,6 +32,16 @@ const dashboard = {
     teams.removeTeam(teamId);
     response.redirect('/dashboard');
   },
+    addTeam(request, response) {
+    const newTeam = {
+      id: uuidv4(),
+      teamName: request.body.teamName,
+      players: [],
+    };
+    teams.addTeam(newTeam);
+    response.redirect('/dashboard');
+  },
+
   
 };
 

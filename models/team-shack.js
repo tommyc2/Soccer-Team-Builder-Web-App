@@ -30,6 +30,10 @@ const teams = {
     const team = this.getTeam(id);
     team.players.push(player);
   },
+  addTeam(team) {
+  this.teamsCollection.push(team);
+},
+
 
 
 };
