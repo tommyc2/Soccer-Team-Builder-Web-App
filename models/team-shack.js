@@ -1,41 +1,44 @@
-"use strict";
+'use strict';
 
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const teamCollection = require("./team-shack.json");
-import _ from 'lodash';
-
+import logger from '../utils/logger.js';
+import JsonStore from './json-store.js';
 
 const teams = {
-  teamCollection: teamCollection.teamsCollection,
 
- 
-  getAllTeams() {
-    return this.teamCollection;
+  store: new JsonStore('./models/team-shack.json', { teamsCollection: [] }),
+  collection: 'playlistCollection',
+
+  getAllPlaylists() {
+    return this.store.findAll(this.collection);
   },
 
-  getTeam(id) {
-    return _.find(this.teamCollection, { id: id });
+  getPlaylist(id) {
+    return this.store.findOneBy(this.collection, (collection => collection.id === id));
   },
-  
-  removePlayer(id, playerId) {
-    const team = this.getTeam(id);
-    _.remove(team.players, { id: playerId });
-  },
-  
-  removeTeam(id) {
-    _.remove(this.teamCollection, { id: id });
-  },
-    addPlayer(id, player) {
-    const team = this.getTeam(id);
-    team.players.push(player);
-  },
-  addTeam(team) {
-  this.teamsCollection.push(team);
-},
 
+  removeSong(id, songId) {
+    const arrayName = "songs";
+    this.store.removeItem(this.collection, id, arrayName, songId);
+  },
 
+  removePlaylist(id) {
+    const playlist = this.getPlaylist(id);
+    this.store.removeCollection(this.collection, playlist);
+  },
+
+  removeAllPlaylists() {
+    this.store.removeAll(this.collection);
+  },
+
+  addPlaylist(playlist) {
+    this.store.addCollection(this.collection, playlist);
+  },
+
+  addSong(id, song) {
+    const arrayName = "songs";
+    this.store.addItem(this.collection, id, arrayName, song);
+  },
 
 };
 
-export default teams;
+export default playlistStore;
