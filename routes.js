@@ -18,6 +18,8 @@ router.get('/team/:id', team.index);
 router.get('/team/:id/deleteplayer/:playerId', team.deletePlayer);
 router.get('/dashboard/deleteteam/:id', dashboard.deleteTeam);
 router.post('/team/:id/addplayer', team.addPlayer);
+router.post('/dashboard/addteam', dashboard.addTeam);
+
 
 
 // export router module

@@ -20,7 +20,7 @@ const team = {
   },
   deletePlayer(request, response) {
     const teamId = request.params.id;
-    const playerId = request.params.playerid;
+    const playerId = request.params.playerId;
     logger.debug(`Deleting player ${playerId} from Playlist ${teamId}`);
     teams.removePlayer(teamId, playerId);
     response.redirect('/team/' + teamId);
