@@ -29,8 +29,8 @@ const team = {
     const teamId = request.params.id;
     const team = teams.getTeam(teamId);
     const newPlayer = {
-      title: request.body.title,
-      id: uuidv4()
+      id: uuidv4(),
+      playerName: request.body.playerName
     };
     teams.addPlayer(teamId, newPlayer);
     response.redirect('/team/' + teamId);

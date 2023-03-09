@@ -28,7 +28,7 @@ const teams = {
   },
     addPlayer(id, player) {
     const team = this.getTeam(id);
-    team.songs.push(player);
+    team.players.push(player);
   },
 
 
