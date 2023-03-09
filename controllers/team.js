@@ -11,7 +11,7 @@ const team = {
     logger.debug('Team id = ' + teamId);
     const viewData = {
       title: 'Team',
-      team: teams.getAllTeams(teamId),
+      team: teams.getTeam(teamId),
     };
     response.render('team', viewData);
     logger.debug(viewData.team);
