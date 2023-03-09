@@ -14,6 +14,7 @@ const team = {
       team: teams.getAllTeams(teamId),
     };
     response.render('team', viewData);
+    logger.debug(viewData.team);
   },
   deletePlayer(request, response) {
     const teamId = request.params.id;
