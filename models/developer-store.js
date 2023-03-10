@@ -4,6 +4,7 @@ import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const developersStore = require("./developers-store.json");
 
+
 const developersStoreObject = {
   // import the developers collection object
   developers: developersStore.developers,
