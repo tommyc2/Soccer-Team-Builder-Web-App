@@ -18,4 +18,8 @@ ratingBtn &&
     }
   });
 
-const 
+const exploreTeamsButton = document.querySelector('exploreTeams');
+
+exploreTeamsButton.addEventListener("click", () => {
+  confirm("This link will direct you to the list of global soccer teams website in a new tab, Do you wish to continue?");
+})
