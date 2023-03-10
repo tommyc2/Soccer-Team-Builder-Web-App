@@ -1,4 +1,4 @@
-<!-- hello world --> const ratingBtn = document.querySelector("#rateit");
+const ratingBtn = document.querySelector("#rateit");
 
 $(".delteam").click(() => confirm("Really delete this team?"));
 
