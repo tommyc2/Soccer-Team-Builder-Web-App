@@ -1,26 +1,17 @@
-'use strict';
+"use strict";
 
-
-import logger from '../utils/logger.js';
-
+import logger from "../utils/logger.js";
 
 const start = {
-  
-
   index(request, response) {
-    
-
-    logger.info('start rendering');
-    
+    logger.info("start rendering");
 
     const viewData = {
-      title: 'Welcome to the Soccer Team App!',
+      title: "Welcome to the Soccer Team App!",
     };
-    
 
-    response.render('start', viewData);
+    response.render("start", viewData);
   },
 };
-
 
 export default start;

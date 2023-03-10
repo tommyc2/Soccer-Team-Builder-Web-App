@@ -1,19 +1,18 @@
-'use strict';
+"use strict";
 
-
-import logger from '../utils/logger.js';
-import teams from '../models/team-shack.js';
-import { v4 as uuidv4 } from 'uuid';
+import logger from "../utils/logger.js";
+import teams from "../models/team-shack.js";
+import { v4 as uuidv4 } from "uuid";
 
 const team = {
   index(request, response) {
     const teamId = request.params.id;
-    logger.debug('Team id = ' + teamId);
+    logger.debug("Team id = " + teamId);
     const viewData = {
-      title: 'Team',
+      title: "Team",
       team: teams.getTeam(teamId),
     };
-    response.render('team', viewData);
+    response.render("team", viewData);
     logger.debug(viewData.team);
   },
   deletePlayer(request, response) {
@@ -21,9 +20,9 @@ const team = {
     const playerId = request.params.playerId;
     logger.debug(`Deleting player ${playerId} from Playlist ${teamId}`);
     teams.removePlayer(teamId, playerId);
-    response.redirect('/team/' + teamId);
+    response.redirect("/team/" + teamId);
   },
-    addPlayer(request, response) {
+  addPlayer(request, response) {
     const teamId = request.params.id;
     const team = teams.getTeam(teamId);
     const newPlayer = {
@@ -34,9 +33,8 @@ const team = {
       marketValue: request.body.marketValue,
     };
     teams.addPlayer(teamId, newPlayer);
-    response.redirect('/team/' + teamId);
+    response.redirect("/team/" + teamId);
   },
-
 };
 
 export default team;
