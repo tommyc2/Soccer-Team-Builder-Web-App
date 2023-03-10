@@ -1,10 +1,31 @@
 <form class="ui stacked segment form" action="/team/{{team.id}}/addplayer" method="POST">
-  <div class="two fields">
+  
+  <div class="four fields">
+    
     <div class="field">
-      <label>Player</label>
-      <input type="text" name="playerName" autofocus required title = "Please include a valid player name"
-      placeholder="Player Name">
+      <label>Player Name</label>
+    <input type="text" name="playerName" autofocus required title = "Please include a valid player name"
+      placeholder="e.g. johnny power">
     </div>
+    
+    <div class="field">
+    <label>Player Position</label>
+     <input type="text" name="playerName" autofocus required title = "Please include a valid player name"
+      placeholder="e.g. Midfielder, CM, DM">
+      </div>
+    
+    <div class="field">
+    <label>Player Age </label>
+     <input type="text" name="playerName" autofocus required title = "Please include a valid player name"
+      placeholder="e.g. 20">
+    </div>
+    
+    <div class="field">
+    <label>Market Value</label>
+     <input type="text" name="playerName" autofocus required title = "Please include a valid player name"
+      placeholder="e.g. €20m">
+    </div>
+    
   </div>
   <button class="ui blue submit button">Add Player</button>
 </form>
