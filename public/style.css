@@ -37,9 +37,6 @@ h1 {
 background-color: #F9DB6D;
 }
 
-.ui.button {
-  color: red;
-}
 .bigger{
     font-size: 20px;
 }
@@ -50,5 +47,5 @@ background-color: #F9DB6D;
 
 #paragraph {
   font-style: italic;
-  color: #5a5357;
+  color: #5a5357
 }
