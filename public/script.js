@@ -18,8 +18,12 @@ ratingBtn &&
     }
   });
 
-const exploreTeamsButton = document.querySelector('exploreTeams');
+const exploreTeamsButton = document.querySelector('#exploreTeams');
 
 exploreTeamsButton.addEventListener("click", () => {
-  confirm("This link will direct you to the list of global soccer teams website in a new tab, Do you wish to continue?");
+  const prompt = confirm("This link will direct you to the list of global soccer teams website in a new tab, Do you wish to continue?");
+  if (prompt){
+    /* Reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm */
+    window.open("https://www.espn.com/soccer/teams", "_blank");
+  }
 })
