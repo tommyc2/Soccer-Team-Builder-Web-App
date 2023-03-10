@@ -1,11 +1,9 @@
 'use strict';
 
-// import all required modules
+
 import logger from '../utils/logger.js';
 import teams from '../models/team-shack.js';
 import { v4 as uuidv4 } from 'uuid';
-
-
 
 const team = {
   index(request, response) {

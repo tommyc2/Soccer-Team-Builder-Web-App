@@ -1,10 +1,10 @@
-import winston from 'winston';
+import winston from "winston";
 
-const logger = new (winston.createLogger)({
-  transports: [new (winston.transports.Console)({ json: false })],
+const logger = new winston.createLogger({
+  transports: [new winston.transports.Console({ json: false })],
 });
 
-logger.level = 'debug';
+logger.level = "debug";
 
 if (process.env.LEVEL) {
   logger.level = process.env.LEVEL;

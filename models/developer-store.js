@@ -6,14 +6,13 @@ const developersStore = require("./developers-store.json");
 
 
 const developersStoreObject = {
-  // import the developers collection object
+
   developers: developersStore.developers,
 
-  // function to get all of the developers
+
   getAllDevelopers() {
     return this.developers;
   },
 };
 
-// export the developersStore object so it can be used elsewhere
 export default developersStoreObject;
