@@ -31,7 +31,9 @@ const team = {
     const newPlayer = {
       id: uuidv4(),
       playerName: request.body.playerName,
-      position: request.
+      position: request.body.position,
+      age: request.body.age,
+      marketValue: request.body.marketValue,
     };
     teams.addPlayer(teamId, newPlayer);
     response.redirect('/team/' + teamId);
