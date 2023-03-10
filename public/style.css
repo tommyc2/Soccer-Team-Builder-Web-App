@@ -1,8 +1,10 @@
-@import url="https://fonts.googleapis.com/css?family=Montserrat" 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  /* https://stackoverflow.com/questions/57229145/css-in-vue-js-app-safari-firefox-are-not-loading-google-font */
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+
+  font-family: Helvetica, sans-serif;
+  margin: 3em;
   background-color: #464D77;
 }
 
@@ -33,4 +35,8 @@ h1 {
 
 .ui.menu {
 background-color: #F9DB6D;
+}
+
+.ui.button {
+  color: red;
 }
