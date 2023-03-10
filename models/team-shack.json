@@ -17,13 +17,6 @@
           "age": "22",
           "playerName": "Piano Sonata No. 7",
           "marketValue": "€20m"
-        },
-        {
-          "id": "03",
-          "position": "Goalkeeper",
-          "age": "21",
-          "playerName": "Piano Sonata No. 10",
-          "marketValue": "€60m"
         }
       ]
     },
