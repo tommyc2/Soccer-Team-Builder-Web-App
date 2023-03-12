@@ -17,6 +17,13 @@
           "age": "23",
           "playerName": "Joao Felix",
           "marketValue": "€60m"
+        },
+        {
+          "id": "80e6117f-3b19-40d4-84c8-991c596a20bc",
+          "playerName": "Kalidou Koulibaly ",
+          "position": "Defender",
+          "age": "28",
+          "marketValue": "€70"
         }
       ]
     },
