@@ -51,5 +51,16 @@ background-color: #F9DB6D;
 }
 
 #hq{
-  
+  color: #221F1F !important; 
+  /* https://stackoverflow.com/questions/13117126/how-to-overwrite-css-style */
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2.3em;
+}
+
+#mapSize{
+  border-style: solid;
+  border-color: #e03997;
+  border-radius: 1.5em;
+  border: 1em;
 }
