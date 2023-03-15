@@ -59,8 +59,9 @@ background-color: #F9DB6D;
 }
 
 #mapSize{
+  /* https://www.w3schools.com/cssref/pr_border-width.php */
   border-style: solid;
   border-color: #e03997;
   border-radius: 1.5em;
-  border: 1em;
+  border-width: 0.3em;
 }
