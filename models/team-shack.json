@@ -78,8 +78,20 @@
           "age": "36",
           "playerName": "Hugo Lloris",
           "marketValue": "€30m"
+        },
+        {
+          "id": "b7943ffe-9674-4f5b-9da6-55dd7e519fb8",
+          "playerName": "Emerson Royal",
+          "position": "Wing back",
+          "age": "21",
+          "marketValue": "€25m"
         }
       ]
+    },
+    {
+      "id": "3b537e49-1a23-4c9d-922a-fb75fa56fdfc",
+      "teamName": "Barcelona",
+      "players": []
     }
   ]
 }
