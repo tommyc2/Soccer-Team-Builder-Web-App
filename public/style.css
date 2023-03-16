@@ -17,6 +17,11 @@ h1 {
   display: none;
 }
 
+.ui.small.button{
+  float: right;
+
+}
+
 #welcomeuser {
   display: none;
 }
