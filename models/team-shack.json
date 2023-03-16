@@ -28,33 +28,6 @@
       ]
     },
     {
-      "id": "002",
-      "teamName": "Bayern Munich XI",
-      "players": [
-        {
-          "id": "04",
-          "position": "Attacking Midfielder",
-          "age": "33",
-          "playerName": "Thomas Muller",
-          "marketValue": "€33m"
-        },
-        {
-          "id": "05",
-          "position": "Defender",
-          "age": "21",
-          "playerName": "Matthius De Ligt",
-          "marketValue": "€100m"
-        },
-        {
-          "id": "06",
-          "position": "Goalkeeper",
-          "age": "25",
-          "playerName": "Yan Sommer",
-          "marketValue": "€50m"
-        }
-      ]
-    },
-    {
       "id": "003",
       "teamName": "Spurs XI",
       "players": [
@@ -91,6 +64,11 @@
     {
       "id": "3b537e49-1a23-4c9d-922a-fb75fa56fdfc",
       "teamName": "Barcelona",
+      "players": []
+    },
+    {
+      "id": "33eb09fc-dad3-4824-b2d8-3f2cf66fa085",
+      "teamName": "Sporting Lisbon",
       "players": []
     }
   ]
