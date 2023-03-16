@@ -1,11 +1,10 @@
 <!-- https://www.computerhope.com/issues/ch000317.htm -->
 {{> menu id="dashboard"}}
 
-<section class="ui segment">
-  <form class="ui form">
-     <input type="button" value="Go Back" id="ui small button" onclick="history.back()">
-  </form>
-</section>
+<button class="ui small button" onclick="history.back()">
+  <i class="big arrow alternate circle left icon"></i>
+</button>
+  
 
 <section class="ui segment">
   {{> listteams}}
