@@ -30,7 +30,7 @@ h1 {
 
 .ui.segment {
   background: #F4EDED;
-  border-radius: 10rem;
+  border-radius: 1.2rem;
   
 }
 
@@ -65,4 +65,8 @@ background-color: #F9DB6D;
   border-color: #e03997;
   border-radius: 1.5em;
   border-width: 0.3em;
+}
+
+.ui.grid.segment{
+  border-radius: 1.2em;
 }
