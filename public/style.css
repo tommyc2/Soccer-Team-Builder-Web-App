@@ -6,6 +6,7 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 3em;
   background-color: #464D77;
+  background-image: url("https://cdn.glitch.global/e05a4df7-aa60-4b97-90f5-5a2bb0d57094/gradient.png?v=1679004268431");
 }
 
 h1 {
@@ -75,3 +76,5 @@ background-color: #F9DB6D;
 .ui.grid.segment{
   border-radius: 1.2em;
 }
+
+.
