@@ -17,13 +17,6 @@
           "age": "23",
           "playerName": "Joao Felix",
           "marketValue": "€60m"
-        },
-        {
-          "id": "80e6117f-3b19-40d4-84c8-991c596a20bc",
-          "playerName": "Kalidou Koulibaly ",
-          "position": "Defender",
-          "age": "28",
-          "marketValue": "€70"
         }
       ]
     },
@@ -67,8 +60,21 @@
       "players": []
     },
     {
-      "id": "33eb09fc-dad3-4824-b2d8-3f2cf66fa085",
-      "teamName": "Sporting Lisbon",
+      "id": "a6931932-db5d-48a7-8587-121ed3825b27",
+      "teamName": "Wrexham",
+      "players": [
+        {
+          "id": "836b14a8-f8e1-40a9-8bb8-a95444850359",
+          "playerName": "Ryan Reynolds",
+          "position": "CF",
+          "age": "56",
+          "marketValue": "€10m"
+        }
+      ]
+    },
+    {
+      "id": "d8c30d33-a440-4c7d-9cbd-a7cdb55d521d",
+      "teamName": "Sporting",
       "players": []
     }
   ]
