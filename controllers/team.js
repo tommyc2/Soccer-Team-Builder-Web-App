@@ -35,6 +35,21 @@ const team = {
     teams.addPlayer(teamId, newPlayer);
     response.redirect("/team/" + teamId);
   },
+    updatePlayer(request, response) {
+    const teamId = request.params.id;
+    const playerId = request.params.playerId;
+    logger.debug("updating song " + songId);
+    const updatedPlayer = {
+      id: playerId,
+      playerName: request.body.playerName,
+      position: request.body.position,
+      age: request.body.age,
+      marketValue: request.body.marketValue,
+    };
+    teams.editPlayer(teamId, playerId, updatedPlayer);
+    response.redirect('/team/' + teamId);
+  }
+
 };
 
 export default team;

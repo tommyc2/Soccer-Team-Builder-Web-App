@@ -16,5 +16,7 @@ router.get("/team/:id/deleteplayer/:playerId", team.deletePlayer);
 router.get("/dashboard/deleteteam/:id", dashboard.deleteTeam);
 router.post("/team/:id/addplayer", team.addPlayer);
 router.post("/dashboard/addteam", dashboard.addTeam);
+router.post('/team/:id/updateplayer/:playerId', team.updatePlayer);
+
 
 export default router;

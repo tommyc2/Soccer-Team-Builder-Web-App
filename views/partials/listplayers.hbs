@@ -1,41 +1,54 @@
-<table class="ui fixed striped table">
+<table class="ui striped table">
   <thead>
     <tr>
-      <th>Player Name</th>
-      <th>Position</th>
-      <th>Age</th>
-      <th>Market Value</th>
-      <th>  </th>
+      <th class="four wide">Player</th>
+      <th class="four wide">Position</th>
+      <th class="three wide">Age</th>
+      <th class="three wide">Market Value</th>
     </tr>
   </thead>
-  <tbody>
+<tbody>
     {{#each team.players}}
-      <tr>
-        <td>
-          {{playerName}}
-        </td>
-        <td>
-          {{position}}
-        </td>
-        <td>
-          {{age}}
-        </td>
-        <td>
-          {{marketValue}}
-        </td>
-        <td>
-          <a href="/team/{{../team.id}}/deleteplayer/{{id}}" class="ui tiny black button delplayer"><i class="ui trash icon"></i>
-          </a>
-        </td>
-      </tr>
+    <form class = "ui stacked segment form" action="/playlist/{{../playlist.id}}/updatesong/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input type="text" name="playerName" autofocus required title = "Please include a valid player name" placeholder="Player Name: " value = "{{playerName}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="position" required title = "Please include a valid position" placeholder="Position: " value = "{{position}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="age" autofocus required title = "Please include a valid age" placeholder="Age: " value = "{{age}}">         
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="marketValue" required title = "Please enter a valid market value" placeholder="Market Value: " value = "{{marketValue}}">
+        </span>
+      </td>
+      <td class="center aligned">
+        <button class="ui submit icon button"><i class="ui pencil alternate icon"></i></button>
+      </td>
+      <td class="center aligned">
+        <a href="/team/{{../team.id}}/deleteplayer/{{id}}" class="ui icon button delplayer">
+          <i class="ui trash icon"></i>
+        </a>
+      </td>
+    </tr>
+    </form> 
     {{/each}}
   </tbody>
 </table>
 
- <p>
+<p>
   <span id="rating"> </span>
 </p>
 
-<button class="ui blue button" id = "rateit">
+<button class="ui blue button" id="rateit">
   Rate it! <i class="star icon"></i>
 </button>
