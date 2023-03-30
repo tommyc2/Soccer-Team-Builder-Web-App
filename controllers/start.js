@@ -25,6 +25,7 @@ const start = {
   for (let item of teamsTotal) {
     numPlayers += item.players.length;
   }
+    avgNumPlayersPerTeam += numPlayers / numTeams;
     
     const viewData = {
     title: 'Welcome to the Team App!',
