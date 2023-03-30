@@ -4,6 +4,7 @@ import logger from '../utils/logger.js';
 import userStore from '../models/user-store.js';
 import { v4 as uuidv4 } from 'uuid';
 
+
 const accounts = {
 
 
@@ -46,11 +47,13 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userStore.getUserByEmail(request.body.email);
-    if (user) {
+    const userPassword = userStore.getUserByPassword(request.body.password);
+    if (user && userPassword) {
       response.cookie('team', user.email);
       logger.info('logging in' + user.email);
       response.redirect('/start');
     } else {
+      logger.info('login failed! Wrong password or email')
       response.redirect('/login');
     }
   },
@@ -59,6 +62,7 @@ const accounts = {
     const userEmail = request.cookies.team;
     return userStore.getUserByEmail(userEmail);
   }
+  
 }
 
 export default accounts;

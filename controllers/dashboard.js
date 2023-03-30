@@ -3,18 +3,23 @@
 import logger from "../utils/logger.js";
 import teams from "../models/team-shack.js";
 import { v4 as uuidv4 } from "uuid";
+import accounts from './accounts.js';
+
 
 const dashboard = {
-  index(request, response) {
-    logger.info("dashboard rendering");
-
+     index(request, response) {
+    logger.info('dashboard rendering');
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
-      title: "Soccer Teams",
-      teams: teams.getAllTeams(),
+      title: 'Soccer Teams Dashboard',
+      teams: teams.getUserTeams(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-
-    logger.info("about to render", viewData.teams);
-    response.render("dashboard", viewData);
+    logger.info('about to render' + viewData.teams);
+    response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
 
   deleteTeam(request, response) {
@@ -32,6 +37,21 @@ const dashboard = {
     teams.addTeam(newTeam);
     response.redirect("/dashboard");
   },
+  
+     addTeam(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newTeam = {
+      id: uuidv4(),
+      userid: loggedInUser.id,
+      playerName: request.body.title,
+      marketValue: request.body.duration,
+      players: [],
+    };
+    logger.debug('Creating a new Soccer Team' + newTeam);
+    teams.addTeam(newTeam);
+    response.redirect('/dashboard');
+  },
+
 };
 
 export default dashboard;
