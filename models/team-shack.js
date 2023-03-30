@@ -40,6 +40,11 @@ const teams = {
     const arrayName = "players";
     this.store.addItem(this.collection, id, arrayName, player);
   },
+    editPlayer(id, playerId, updatedPlayer) {
+    const arrayName = "players";
+    this.store.editItem(this.collection, id, playerId, arrayName, updatedPlayer);
+  },
+
 };
 
 export default teams;

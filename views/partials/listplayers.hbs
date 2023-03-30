@@ -9,7 +9,7 @@
   </thead>
 <tbody>
     {{#each team.players}}
-    <form class = "ui stacked segment form" action="/playlist/{{../playlist.id}}/updatesong/{{id}}" method="POST">
+    <form class = "ui stacked segment form" action="/team/{{../team.id}}/updateplayer/{{id}}" method="POST">
     <tr class="fields">
       <td class="field">
         <span class="ui input">

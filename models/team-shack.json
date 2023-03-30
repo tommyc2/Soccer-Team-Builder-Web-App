@@ -5,13 +5,6 @@
       "teamName": "Chelsea First Team",
       "players": [
         {
-          "id": "01",
-          "position": "Defender",
-          "age": "34",
-          "playerName": "Thiago Silva",
-          "marketValue": "€13m"
-        },
-        {
           "id": "02",
           "position": "Forward",
           "age": "23",

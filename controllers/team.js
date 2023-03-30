@@ -18,7 +18,7 @@ const team = {
   deletePlayer(request, response) {
     const teamId = request.params.id;
     const playerId = request.params.playerId;
-    logger.debug(`Deleting player ${playerId} from Playlist ${teamId}`);
+    logger.debug(`Deleting player ${playerId} from Team ${teamId}`);
     teams.removePlayer(teamId, playerId);
     response.redirect("/team/" + teamId);
   },
@@ -38,7 +38,7 @@ const team = {
     updatePlayer(request, response) {
     const teamId = request.params.id;
     const playerId = request.params.playerId;
-    logger.debug("updating song " + songId);
+    logger.debug("updating player " + playerId);
     const updatedPlayer = {
       id: playerId,
       playerName: request.body.playerName,
