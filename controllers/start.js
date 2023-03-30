@@ -7,22 +7,26 @@ import teams from '../models/team-shack.js';
 const start = {
   index(request, response) {
     logger.info("start rendering");
-    
-    // app statistics calculations
 
-  const teams = teams.getAllTeams();
+  const teamsTotal = teams.getAllTeams();
 
-  let numTeams = teams.length;
+  let numTeams = teamsTotal.length;
 
   let numPlayers = 0;
   
-  for (let i of teams) {
-    numPlayers += i.players.length;
+  let avgNumPlayersPerTeam = 0;
+    
+  for (let item of teamsTotal) {
+    numPlayers += item.players.length;
 }
+    
+    let averageNumPlayers = numPlayers / teams.length;
+    
     const viewData = {
     title: 'Welcome to the Team App!',
     totalTeams: numTeams,
     totalPlayers: numPlayers,
+    averageNumPlayersPerTeam: avgNumPlayersPerTeam
 };
 
 
