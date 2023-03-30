@@ -60,6 +60,11 @@ class JsonStore {
     data[0][arr].splice(index, 1, obj);
     await this.db.write();
   }
+    findBy(collection, filter) {
+    const results = this.db.data[collection].filter(filter);
+    return results;
+  }
+
 
 }
 

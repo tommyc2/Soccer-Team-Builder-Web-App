@@ -20,13 +20,13 @@ const start = {
     numPlayers += item.players.length;
 }
     
-    let averageNumPlayers = numPlayers / teams.length;
+    let averageNumPlayers = numPlayers / teamsTotal.length;
     
     const viewData = {
     title: 'Welcome to the Team App!',
     totalTeams: numTeams,
     totalPlayers: numPlayers,
-    averageNumPlayersPerTeam: avgNumPlayersPerTeam
+    averageNumPlayersPerTeam: averageNumPlayers
 };
 
 

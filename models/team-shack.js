@@ -45,6 +45,11 @@ const teams = {
     this.store.editItem(this.collection, id, playerId, arrayName, updatedPlayer);
   },
 
+    getUserTeams(userid) {
+    return this.store.findBy(this.collection, (team => team.userid === userid));
+  },
+
+
 };
 
 export default teams;
