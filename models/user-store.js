@@ -24,7 +24,7 @@ const userStore = {
     this.store.addCollection(this.collection, user);
   },
   
-  getUserByEmail(password) {
+  getUserByPassword(password) {
     return this.store.findOneBy(this.collection, (user => user.password === password));
   },
 

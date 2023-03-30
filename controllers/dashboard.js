@@ -43,8 +43,7 @@ const dashboard = {
     const newTeam = {
       id: uuidv4(),
       userid: loggedInUser.id,
-      playerName: request.body.title,
-      marketValue: request.body.duration,
+      teamName: request.body.teamName,
       players: [],
     };
     logger.debug('Creating a new Soccer Team' + newTeam);
