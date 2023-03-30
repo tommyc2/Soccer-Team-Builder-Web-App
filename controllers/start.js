@@ -8,7 +8,11 @@ import accounts from './accounts.js';
 
 const start = {
   index(request, response) {
-    logger.info("start rendering");
+    
+  const loggedInUser = accounts.getCurrentUser(request);
+  logger.info('start rendering');
+    
+  if (loggedInUser){
 
   const teamsTotal = teams.getAllTeams();
 
@@ -20,20 +24,21 @@ const start = {
     
   for (let item of teamsTotal) {
     numPlayers += item.players.length;
-}
-    
-    let averageNumPlayers = numPlayers / teamsTotal.length;
+  }
     
     const viewData = {
     title: 'Welcome to the Team App!',
     totalTeams: numTeams,
     totalPlayers: numPlayers,
-    averageNumPlayersPerTeam: averageNumPlayers
+    averageNumPlayersPerTeam: avgNumPlayersPerTeam,
 };
-
+  
 
     response.render("start", viewData);
+  }
+    else response.redirect('/');
   },
+  
 };
 
 export default start;

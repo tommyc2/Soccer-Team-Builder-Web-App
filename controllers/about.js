@@ -5,16 +5,20 @@ import accounts from './accounts.js';
 
 
 const about = {
-  index(request, response) {
-    logger.info("about rendering");
-
-    const viewData = {
-      title: "About the Team",
-      developers: developersStoreObject.getAllDevelopers(),
-    };
-
-    response.render("about", viewData);
+   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.info('about rendering');
+    if (loggedInUser) {
+      const viewData = {
+        title: 'About the Playlist App',
+        developers: developersStoreObject.getAllDevelopers(),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+      response.render('about', viewData);
+    }
+    else response.redirect('/');    
   },
+
 };
 
 export default about;
