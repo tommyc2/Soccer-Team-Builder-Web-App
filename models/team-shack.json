@@ -1,5 +1,24 @@
 {
   "teamsCollection": [
-    ]
-
+    {
+      "id": "cc65e341-a6b3-4012-89fc-a300c318cde4",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "teamName": "team",
+      "players": [
+        {
+          "id": "be13ea15-9529-46de-b6f6-1cbe5d8945ad",
+          "playerName": "test",
+          "position": "test",
+          "age": "test",
+          "marketValue": "test"
+        }
+      ]
+    },
+    {
+      "id": "80ed11e8-95aa-44f7-b537-1db67244dff4",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "teamName": "team1",
+      "players": []
+    }
+  ]
 }
