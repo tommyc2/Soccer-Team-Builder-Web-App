@@ -27,6 +27,13 @@
       "email": "tcondon12@icloud.com",
       "password": "starsign",
       "id": "ecc401ed-2ee6-4d52-b569-a32a62d8bd4d"
+    },
+    {
+      "firstName": "john",
+      "lastName": "hopkins",
+      "email": "johnhopkins@wit.ie",
+      "password": "secret6",
+      "id": "cbff8c82-0b74-40b3-a340-acd484bf3551"
     }
   ]
 }

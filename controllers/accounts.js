@@ -41,6 +41,7 @@ const accounts = {
     user.id = uuidv4();
     userStore.addUser(user);
     logger.info('registering' + user.email);
+    response.cookie('team', user.email)
     response.redirect('/start');
   },
 
