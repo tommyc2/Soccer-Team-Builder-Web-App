@@ -29,6 +29,7 @@ const dashboard = {
     response.redirect("/dashboard");
   },
   addTeam(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newTeam = {
       id: uuidv4(),
       teamName: request.body.teamName,
@@ -39,19 +40,6 @@ const dashboard = {
     teams.addTeam(newTeam, function() {
       response.redirect("/dashboard");
     });
-  },
-  
-     addTeam(request, response) {
-    const loggedInUser = accounts.getCurrentUser(request);
-    const newTeam = {
-      id: uuidv4(),
-      userid: loggedInUser.id,
-      teamName: request.body.teamName,
-      players: [],
-    };
-    logger.debug('Creating a new Soccer Team' + newTeam);
-    teams.addTeam(newTeam);
-    response.redirect('/dashboard');
   },
 
 };

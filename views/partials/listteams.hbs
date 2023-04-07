@@ -1,16 +1,3 @@
-{{#each teams}}
-  <section class="ui segment">
-    <h2 class="ui header">
-      {{teamName}}
-    </h2>
-    <a href="/team/{{id}}">
-      <i class="ui open folder icon"></i>
-    </a>
-    <a href="/dashboard/deleteteam/{{id}}">
-      <i class="ui trash icon delteam"></i>
-    </a>
-  </section>
-{{/each}}
 
 <div class="ui centered cards">
   {{#each teams}}
@@ -19,13 +6,13 @@
         <img src="{{picture}}">
       </div>
       <div class="content">
-        <a class="header">{{title}}</a>
+        <a class="header">{{teamName}}</a>
       </div>
       <div class="extra content">
-        <a href="/playlist/{{id}}" class="ui icon button">
+        <a href="/team/{{id}}" class="ui icon button">
           <i class="icon folder open"></i>
         </a>
-        <a href="/dashboard/deleteplaylist/{{id}}" class="ui icon button delplaylist">
+        <a href="/dashboard/deleteteam/{{id}}" class="ui icon button delteam">
           <i class="icon trash"></i>
         </a>
       </div>
