@@ -20,6 +20,13 @@
       "email": "tcmedion@outlook.ie",
       "password": "password",
       "id": "965940a7-cbe9-4f2d-9371-e43da8c0a101"
+    },
+    {
+      "firstName": "test",
+      "lastName": "name",
+      "email": "tcondon12@icloud.com",
+      "password": "starsign",
+      "id": "ecc401ed-2ee6-4d52-b569-a32a62d8bd4d"
     }
   ]
 }
