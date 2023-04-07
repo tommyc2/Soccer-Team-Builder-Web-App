@@ -40,8 +40,8 @@ const accounts = {
     const user = request.body;
     user.id = uuidv4();
     logger.info('registering' + user.email);
-    response.cookie('team', user.email)
-    response.cookie('team', user.picture)
+    response.cookie('team', user.email);
+    response.cookie('team', user.picture);
     userStore.addUser(user, function() {
       response.redirect('/start');
     });
@@ -63,7 +63,9 @@ const accounts = {
 
   getCurrentUser (request) {
     const userEmail = request.cookies.team;
+    const picture = request.cookies.team
     return userStore.getUserByEmail(userEmail);
+    return userStore.getUserByEmail(picture);
   }
   
 }

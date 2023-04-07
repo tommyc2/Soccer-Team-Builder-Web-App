@@ -48,6 +48,13 @@
       "email": "user1@wit.ie",
       "password": "hello1",
       "id": "a97865ea-72fe-4311-af5b-42f979542767"
+    },
+    {
+      "firstName": "signup",
+      "lastName": "test",
+      "email": "user2@wit.ie",
+      "password": "tester",
+      "id": "8a34e322-0d55-43a1-aacc-314f2bd4e24f"
     }
   ]
 }
