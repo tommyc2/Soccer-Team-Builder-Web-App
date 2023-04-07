@@ -32,6 +32,7 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const newTeam = {
       id: uuidv4(),
+      userid: loggedInUser.id,
       teamName: request.body.teamName,
       players: [],
       picture: request.files.picture
