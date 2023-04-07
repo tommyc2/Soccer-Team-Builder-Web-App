@@ -15,6 +15,7 @@ const dashboard = {
       title: 'Soccer Teams Dashboard',
       teams: teams.getUserTeams(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture
     };
     logger.info('about to render' + viewData.teams);
     response.render('dashboard', viewData);

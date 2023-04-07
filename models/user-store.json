@@ -34,6 +34,20 @@
       "email": "johnhopkins@wit.ie",
       "password": "secret6",
       "id": "cbff8c82-0b74-40b3-a340-acd484bf3551"
+    },
+    {
+      "firstName": "tommy",
+      "lastName": "condon",
+      "email": "user@wit.ie",
+      "password": "hello",
+      "id": "c2b317b9-270e-4b49-af38-ed90e4842ed9"
+    },
+    {
+      "firstName": "account",
+      "lastName": "forPicture",
+      "email": "user1@wit.ie",
+      "password": "hello1",
+      "id": "a97865ea-72fe-4311-af5b-42f979542767"
     }
   ]
 }

@@ -33,8 +33,8 @@ const userStore = {
     return this.store.findOneBy(this.collection, (user => user.email === email));
   },
 
-  async addUser(user) {
-    function uploader(){
+  async addUser(user, response) {
+  function uploader(){
     return new Promise(function(resolve, reject) {  
       cloudinary.uploader.upload(user.picture.tempFilePath,function(result,err){
         if(err){console.log(err);}
@@ -48,7 +48,8 @@ const userStore = {
 
   this.store.addCollection(this.collection, user);
   response();
-  },
+},
+
   
   getUserByPassword(password) {
     return this.store.findOneBy(this.collection, (user => user.password === password));
