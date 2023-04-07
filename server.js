@@ -1,7 +1,6 @@
 
 "use strict";
 
-
 import express from "express";
 import exphbs from "express-handlebars";
 import logger from "./utils/logger.js";
