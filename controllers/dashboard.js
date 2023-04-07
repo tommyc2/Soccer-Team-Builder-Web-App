@@ -33,9 +33,12 @@ const dashboard = {
       id: uuidv4(),
       teamName: request.body.teamName,
       players: [],
+      picture: request.files.picture
     };
-    teams.addTeam(newTeam);
-    response.redirect("/dashboard");
+    logger.debug("Creating a new team: " + newTeam);
+    teams.addTeam(newTeam, function() {
+      response.redirect("/dashboard");
+    });
   },
   
      addTeam(request, response) {
