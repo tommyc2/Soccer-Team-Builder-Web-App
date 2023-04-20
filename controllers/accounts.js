@@ -39,7 +39,7 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuidv4();
-    user.picture = request.body.
+    user.picture = request.files.picture;
     logger.info('registering' + user.email);
     userStore.addUser(user, function() {
       response.cookie('team', user.email);

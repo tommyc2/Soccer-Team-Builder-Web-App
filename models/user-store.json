@@ -69,6 +69,22 @@
       "email": "useruser@gmail.com",
       "password": "etc",
       "id": "9bb07c5a-3c27-4acc-ba08-fe195a753684"
+    },
+    {
+      "firstName": "tommy",
+      "lastName": "condon",
+      "email": "tcondon@gmail.com",
+      "password": "password",
+      "id": "cd7ec68e-6d63-4c6a-8fa8-bbe4d1c5ae0a",
+      "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682001006/pwlz8ylqmanfi0rz2jp0.jpg"
+    },
+    {
+      "firstName": "tommy",
+      "lastName": "test",
+      "email": "hello@wit.ie",
+      "password": "password",
+      "id": "04f1d8a6-c6c0-4476-ae03-534cc3342a1d",
+      "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682001284/tolnxsjcuyrbv12xgdo8.png"
     }
   ]
 }

@@ -32,6 +32,8 @@ const start = {
     totalTeams: numTeams,
     totalPlayers: numPlayers,
     averageNumPlayersPerTeam: avgNumPlayersPerTeam,
+    fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+    picture: loggedInUser.picture
 };
   
 
