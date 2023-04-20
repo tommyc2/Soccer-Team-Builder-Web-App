@@ -21,9 +21,16 @@ app.use(fileUpload({useTempFiles: true}));
 const handlebars = exphbs.create({ extname: ".hbs" ,
                                   
        helpers: {
+         
       uppercase: (inputString) => {
         return inputString.toUpperCase();
       },
+         
+      calcTotal: (playersArray) => {
+        let totalMarketValueNum = 0;
+        playersArray.forEach(player => totalMarketValueNum += parseFloat(player.marketValue)); 
+        return totalMarketValueNum;
+       },
          
 // Formatter helper function to reduce mess of date format
       formatDate: (date) =>  {
