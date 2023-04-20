@@ -17,9 +17,18 @@ app.use(bodyParser.urlencoded({ extended: false, }));
 app.use(cookieParser());
 app.use(fileUpload({useTempFiles: true}));
 
-const handlebars = exphbs.create({ extname: ".hbs" });
+// use handlebars as view engine
+const handlebars = exphbs.create({ extname: ".hbs" ,
+   helpers: {
+
+      uppercase: (inputString) => {
+        return inputString.toUpperCase();
+      },
+  }
+});
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
+
 
 
 import routes from "./routes.js";
