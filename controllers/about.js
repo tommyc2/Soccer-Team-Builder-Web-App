@@ -13,6 +13,7 @@ const about = {
         title: 'About the Playlist App',
         developers: developersStoreObject.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture
       };
       response.render('about', viewData);
     }
