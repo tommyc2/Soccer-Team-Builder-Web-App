@@ -19,12 +19,20 @@ app.use(fileUpload({useTempFiles: true}));
 
 // use handlebars as view engine
 const handlebars = exphbs.create({ extname: ".hbs" ,
-   helpers: {
-
+                                  
+       helpers: {
       uppercase: (inputString) => {
         return inputString.toUpperCase();
       },
-  }
+         
+// Formatter helper function to reduce mess of date format
+      formatDate: (date) =>  {
+        let dateCreated = new Date(date);
+        let options = {weekday: "long", year: "numeric", month: "long", day: "2-digit"};       
+        return `${dateCreated.toLocaleDateString("en-IE",options)}`;
+      }
+    }
+
 });
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");

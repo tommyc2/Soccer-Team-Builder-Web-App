@@ -5,9 +5,15 @@
       <div class="image">
         <img src="{{picture}}">
       </div>
+      
+      <!-- Content div -->
       <div class="content">
         <a class="header" href="/team/{{id}}">{{uppercase teamName}}</a>
+        <div class="metadata">
+          <span class="date">Created: {{formatDate date}}</span>
+        </div>
       </div>
+      
       <div class="extra content">
         <a href="/team/{{id}}" class="ui icon button">
           <i class="icon folder open"></i>
