@@ -19,6 +19,21 @@
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "teamName": "team1",
       "players": []
+    },
+    {
+      "id": "01c649c8-6485-4753-b1e7-b1aa698041db",
+      "userid": "e4c91a53-ed96-4859-968f-cfa4c38dee78",
+      "teamName": "Bayern",
+      "players": [
+        {
+          "id": "d406fe4e-9039-4487-89dd-2d23ce7dba27",
+          "playerName": "hello",
+          "position": "lw",
+          "age": "17",
+          "marketValue": "€50m"
+        }
+      ],
+      "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682000228/lxdpvhzzcttbv6rkjibp.png"
     }
   ]
 }

@@ -39,10 +39,10 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuidv4();
+    user.picture = request.body.
     logger.info('registering' + user.email);
-    response.cookie('team', user.email);
-    response.cookie('team', user.picture);
     userStore.addUser(user, function() {
+      response.cookie('team', user.email);
       response.redirect('/start');
     });
   },

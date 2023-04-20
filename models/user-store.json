@@ -55,6 +55,20 @@
       "email": "user2@wit.ie",
       "password": "tester",
       "id": "8a34e322-0d55-43a1-aacc-314f2bd4e24f"
+    },
+    {
+      "firstName": "john",
+      "lastName": "condon",
+      "email": "user45@wit.ie",
+      "password": "etcetc",
+      "id": "e4c91a53-ed96-4859-968f-cfa4c38dee78"
+    },
+    {
+      "firstName": "teste",
+      "lastName": "testteser",
+      "email": "useruser@gmail.com",
+      "password": "etc",
+      "id": "9bb07c5a-3c27-4acc-ba08-fe195a753684"
     }
   ]
 }
