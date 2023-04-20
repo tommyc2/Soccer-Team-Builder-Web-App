@@ -46,7 +46,22 @@
       "id": "3dec2e2c-e396-480c-a4ec-9e36b8c58137",
       "userid": "04f1d8a6-c6c0-4476-ae03-534cc3342a1d",
       "teamName": "test1",
-      "players": [],
+      "players": [
+        {
+          "id": "4eb22053-a743-449f-a7b5-d32ab606bcb9",
+          "playerName": "test",
+          "position": "test",
+          "age": "test",
+          "marketValue": "20000000"
+        },
+        {
+          "id": "a71a5392-721e-4030-8d4b-ef27fddd2425",
+          "playerName": "test",
+          "position": "test",
+          "age": "tetst",
+          "marketValue": "90"
+        }
+      ],
       "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682003890/k8jmp8lxersbe6ytgpkp.png",
       "date": "2023-04-20T15:18:09.918Z"
     }
