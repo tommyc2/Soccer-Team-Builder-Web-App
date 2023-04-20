@@ -1,3 +1,7 @@
+{{#unless team.players}}
+<h3 class="ui center aligned message">It's very quiet in here... start adding some players!</h3>
+
+{{else}}
 <table class="ui striped table">
   <thead>
     <tr>
@@ -52,3 +56,5 @@
 <button class="ui blue button" id="rateit">
   Rate it! <i class="star icon"></i>
 </button>
+
+{{/unless}}
