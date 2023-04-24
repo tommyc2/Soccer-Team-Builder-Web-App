@@ -7,6 +7,7 @@ import accounts from './accounts.js';
 const about = {
    index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
+    const date = new Date();
     logger.info('about rendering');
     if (loggedInUser) {
       const viewData = {
@@ -14,7 +15,9 @@ const about = {
         developers: developersStoreObject.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        date: new Date()
+        
+        /* https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript */
+        date: date.getFullYear()
       };
       response.render('about', viewData);
     }

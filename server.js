@@ -37,9 +37,11 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
         let dateCreated = new Date(date);
         let options = {weekday: "long", year: "numeric", month: "long", day: "2-digit"};       
         return `${dateCreated.toLocaleDateString("en-IE",options)}`;
-      }
+      },
       
-      
+      timeServedSoFar: (date) => {
+       /*  return date-getFullYear */
+       }
     }
 
 });
