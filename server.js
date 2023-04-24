@@ -40,7 +40,8 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
       },
       
       timeServedSoFar: (date) => {
-       /*  return date-getFullYear */
+       let currentYear = new Date(date).getFullYear();
+      return currentYear;
        }
     }
 

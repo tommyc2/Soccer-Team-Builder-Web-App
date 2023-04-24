@@ -19,7 +19,7 @@ const about = {
         developers: developersStoreObject.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        date: date
+        date: date,
       };
       response.render('about', viewData);
     }
