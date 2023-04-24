@@ -2,12 +2,16 @@
 import logger from "../utils/logger.js";
 import developersStoreObject from "../models/developer-store.js";
 import accounts from './accounts.js';
+import teams from "../models/team-shack.js";
+import { v4 as uuidv4 } from "uuid";
 
 
 const about = {
    index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    const date = new Date();
+     
+       /* https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript */
+    const date = new Date().getFullYear();
     logger.info('about rendering');
     if (loggedInUser) {
       const viewData = {
@@ -15,9 +19,7 @@ const about = {
         developers: developersStoreObject.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        
-        /* https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript */
-        date: date.getFullYear()
+        date: date
       };
       response.render('about', viewData);
     }
