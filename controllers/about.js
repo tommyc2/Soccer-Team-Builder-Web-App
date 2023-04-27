@@ -11,7 +11,6 @@ const about = {
     const loggedInUser = accounts.getCurrentUser(request);
      
        /* https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript */
-    const date = new Date().getFullYear();
     logger.info('about rendering');
     if (loggedInUser) {
       const viewData = {
@@ -19,7 +18,6 @@ const about = {
         developers: developersStoreObject.getAllDevelopers(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         picture: loggedInUser.picture,
-        date: date,
       };
       response.render('about', viewData);
     }
