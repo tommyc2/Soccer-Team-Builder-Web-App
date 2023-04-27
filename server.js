@@ -46,18 +46,31 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
          
       capitalStartingLetters: (fullName) => {
       let nameArray = fullName.split(" ");
-      
-      // Separating first + last name into two different indexes in array
-      let firstName = nameArray[0];
-      let surname = nameArray[1];
-      
+        
       // Converting Starting Letters in each array index to a capital letter
 
      //  Reference Material:  https://www.tutorialspoint.com/javascript/string_charat.htm#:~:text=charAt()%20is%20a%20method,length%20–%201.
     // References Material: https://flexiple.com/javascript/javascript-capitalize-first-letter/#
+
+        // Make it so that only the initials of the user are displayed
+        if (nameArray) {
+          for(let i = 0; i < nameArray.length; i++) {
+        nameArray[i] = nameArray[i].charAt(0).toUpperCase();
+            
+            if (i == 0){
+              nameArray[]
+            }
+          }
+          let fullNameRevised = nameArray.join(" ");
+          return fullNameRevised;
+        }
         
-      let firstNameFirstLetter = firstName.charAt[0];
-      let surnameFirstLetter = surname.charAt[0];
+        else {
+          return fullName;
+        }
+      
+        
+        
       }
     }
 
