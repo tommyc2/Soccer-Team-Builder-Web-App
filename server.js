@@ -44,7 +44,7 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
       return currentYear-date + " years ";
        },
          
-      capitalStartingLetters: (fullName) => {
+      initialsDisplayed: (fullName) => {
       let nameArray = fullName.split(" ");
         
       // Converting Starting Letters in each array index to a capital letter
