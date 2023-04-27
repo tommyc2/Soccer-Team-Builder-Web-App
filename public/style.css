@@ -54,6 +54,12 @@ h1 {
 
 .ui.menu {
 background-color: #F9DB6D;
+  
+/*  https://cssgradient.io */
+background: -moz-linear-gradient(148deg, rgba(251,176,84,1) 0%, rgba(255,158,40,1) 0%, rgba(255,103,40,1) 52%, rgba(255,40,40,1) 100%);
+background: -webkit-linear-gradient(148deg, rgba(251,176,84,1) 0%, rgba(255,158,40,1) 0%, rgba(255,103,40,1) 52%, rgba(255,40,40,1) 100%);
+background: linear-gradient(148deg, rgba(251,176,84,1) 0%, rgba(255,158,40,1) 0%, rgba(255,103,40,1) 52%, rgba(255,40,40,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbb054",endColorstr="#ff2828",GradientType=1);
 }
 
 .bigger{
