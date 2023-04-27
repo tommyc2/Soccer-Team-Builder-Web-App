@@ -52,9 +52,10 @@ h1 {
   
 }
 
-.ui.menu > {
+.ui.menu {
 background-color: rgba(245, 244, 56, 0.87);
 }
+
 
 .bigger{
     font-size: 20px;
