@@ -93,6 +93,14 @@
       "password": "secret5",
       "id": "ef1fca74-548e-4ab3-a958-143bc6a242f9",
       "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682595414/wqhlakenkk9lyspmsttb.jpg"
+    },
+    {
+      "firstName": "Tommy",
+      "lastName": "Condon1",
+      "email": "randomemail234@gmail.com",
+      "password": "secret6",
+      "id": "34f7647b-d385-4813-b834-53d81e6494de",
+      "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682607476/buhsdbsnanihy5jpqdja.jpg"
     }
   ]
 }
