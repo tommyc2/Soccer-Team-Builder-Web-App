@@ -85,6 +85,14 @@
       "password": "password",
       "id": "04f1d8a6-c6c0-4476-ae03-534cc3342a1d",
       "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682001284/tolnxsjcuyrbv12xgdo8.png"
+    },
+    {
+      "firstName": "johnny ",
+      "lastName": "wilkonson",
+      "email": "randomemail@gmail.com",
+      "password": "secret5",
+      "id": "ef1fca74-548e-4ab3-a958-143bc6a242f9",
+      "picture": "http://res.cloudinary.com/drubmkx6m/image/upload/v1682595414/wqhlakenkk9lyspmsttb.jpg"
     }
   ]
 }

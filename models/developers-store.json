@@ -7,7 +7,8 @@
       "joined": 2017,
       "job": "Junior Web Developer",
       "city": "Sligo",
-      "mates": 250
+      "mates": 250,
+      "date": 2019
     },
     {
       "name": "Sarah",
@@ -16,7 +17,8 @@
       "joined": 2012,
       "job": "UX Designer",
       "city": "Cork",
-      "mates": 57
+      "mates": 57,
+      "date": 2020
     },
     {
       "name": "Kalidou",
@@ -25,7 +27,8 @@
       "joined": 2019,
       "job": "Senior Software Engineer",
       "city": "Senegal",
-      "mates": 150
+      "mates": 150,
+      "date": 2021
     }
   ]
 }
