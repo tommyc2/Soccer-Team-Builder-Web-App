@@ -52,14 +52,9 @@ h1 {
   
 }
 
-.ui.menu {
-background-color: #F9DB6D;
+.ui.menu > {
+background-color: rgba(245, 244, 56, 0.87);
 }
-
-
-#3d7eaa
-→ 
-#ffe47a
 
 .bigger{
     font-size: 20px;
