@@ -39,9 +39,9 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
         return `${dateCreated.toLocaleDateString("en-IE",options)}`;
       },
       
-      timeServedSoFar: (date) => {
-       let currentYear = new Date(date).getFullYear();
-      return currentYear-date + " years ";
+      timeServedSoFar: (joinedDate) => {
+       let currentYear = new Date().getFullYear();
+      return currentYear-joinedDate + " years ";
        },
          
       initialsDisplayed: (fullName) => {
