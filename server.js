@@ -42,7 +42,12 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
       timeServedSoFar: (date) => {
        let currentYear = new Date(date).getFullYear();
       return currentYear-date + " years ";
-       }
+       },
+         
+      capitalStartingLetters: (fullName) => {
+      let twoNameArray = fullName.split(" ");
+      const firstName = 
+      }
     }
 
 });
