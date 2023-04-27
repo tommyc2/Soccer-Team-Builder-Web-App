@@ -58,15 +58,15 @@ const handlebars = exphbs.create({ extname: ".hbs" ,
         nameArray[i] = nameArray[i].charAt(0).toUpperCase();
             
             if (i == 0){
-              nameArray[]
+              nameArray[0] += "."
             }
           }
-          let fullNameRevised = nameArray.join(" ");
+          let fullNameRevised = nameArray.join("");
           return fullNameRevised;
         }
         
         else {
-          return fullName;
+          return fullName.toUpperCase();
         }
       
         
